@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">ابرار ڈرائی فروٹ اور سلاجیت سینٹر | Abrar Dry Fruits &amp; Himalayan Shilajit</title>
+    <meta name="description" content="ابرار ڈرائی فروٹ - گلگت بلتستان کے برف پوش پہاڑوں کی اصل سلاجیت، کاغذی اخروٹ، بادام، پستہ، کاجو، چلغوزہ، انجیر، کشمش اور خوبانی۔ پورے پاکستان میں کیش آن ڈلیوری۔ واٹس ایپ: 03463298608">
+
+    <!-- Google Fonts: Noto Naskh Arabic (clean Urdu UI), Noto Nastaliq Urdu (display headings), Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+
+    <!-- 1. TOP ANNOUNCEMENT BAR & HEADER (سیکشن ۱: ٹاپ بار و نیویگیشن) -->
+    <div class="top-announcement-bar" id="topBar">
+        <div class="container top-bar-container">
+            <div class="announcement-text">
+                <span class="badge-pill" data-i18n="announcement_badge">خوشخبری</span>
+                <span data-i18n="announcement_text">پورے پاکستان میں ۳۰۰۰ روپے سے زائد کے آرڈر پر مفت ہوم ڈلیوری! 100% خالص اور تازہ میوہ جات کی ضمانت۔</span>
+            </div>
+            <div class="top-bar-actions">
+                <a href="tel:+923463298608" class="top-contact-link">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span dir="ltr" class="ltr-num">0346-3298608</span>
+                </a>
+                <button class="lang-switch-btn" id="langSwitchBtn" type="button" aria-label="Switch Language / زبان تبدیل کریں">
+                    <span class="lang-icon">🌐</span>
+                    <span id="langLabel">English</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-emblem" aria-hidden="true">
+                    <span class="emblem-nut">🌰</span>
+                    <span class="emblem-peak">🏔️</span>
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-title" data-i18n="brand_name">ابرار ڈرائی فروٹ</span>
+                    <span class="logo-tagline" data-i18n="brand_subtitle">اور قدرتی سلاجیت سینٹر</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+                <a href="#hero" class="nav-link active" data-i18n="nav_home">ہوم</a>
+                <a href="#shilajit-special" class="nav-link highlight" data-i18n="nav_shilajit">سلاجیتِ گلگت</a>
+                <a href="#categories" class="nav-link" data-i18n="nav_categories">اقسام</a>
+                <a href="#products" class="nav-link" data-i18n="nav_products">مصنوعات</a>
+                <a href="#health-benefits" class="nav-link" data-i18n="nav_benefits">طبی فوائد</a>
+                <a href="#gift-boxes" class="nav-link" data-i18n="nav_gifts">گفٹ باکس</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">رابطہ و پتہ</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" id="searchTriggerBtn" type="button" title="تلاش کریں / Search" aria-label="Search">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.5 3a6.5 6.5 0 0 1 6.5 6.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5l-1.5 1.5l-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14s4.5-2 4.5-4.5S12 5 9.5 5z"/></svg>
+                </button>
+
+                <button class="action-btn cart-btn" id="cartOpenBtn" type="button" title="شاپنگ کارٹ / Shopping Cart" aria-label="Shopping Cart">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.49c-.37.66-1.08 1.01-1.85 1.01H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1V2m6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5H16z"/></svg>
+                    <span class="cart-badge" id="cartCountBadge">0</span>
+                </button>
+
+                <a href="https://wa.me/923463298608?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%85%D8%AC%DA%BE%DB%92%20%D8%A7%D8%A8%D8%B1%D8%A7%D8%B1%20%DA%88%D8%B1%D8%A7%D8%A6%DB%8C%20%D9%81%D8%B1%D9%88%D9%B9%20%D8%B3%DB%92%20%D8%A2%D8%B1%DA%88%D8%B1%20%DA%A9%D8%B1%D9%86%D8%A7%20%DB%81%DB%92%DB%94" target="_blank" rel="noopener noreferrer" class="whatsapp-header-btn">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.16 8.16 0 0 1 2.4 5.83c0 4.54-3.7 8.24-8.24 8.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.85-.87 2.07c0 1.22.89 2.4 1.01 2.56c.13.17 1.76 2.68 4.26 3.76c.59.26 1.05.41 1.41.53c.6.19 1.14.16 1.57.1c.48-.07 1.47-.6 1.68-1.18c.21-.58.21-1.07.15-1.18c-.06-.1-.22-.16-.47-.28c-.25-.13-1.47-.72-1.7-.81c-.23-.09-.39-.13-.56.13c-.17.25-.64.81-.79.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43c.13-.15.17-.25.25-.42c.09-.17.04-.31-.02-.44c-.06-.12-.56-1.34-.76-1.84c-.2-.49-.41-.42-.56-.43h-.48z"/></svg>
+                    <span data-i18n="order_whatsapp">واٹس ایپ آرڈر</span>
+                </a>
+
+                <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Inline Live Search Dropdown -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="container search-container">
+                <input type="text" id="searchInput" placeholder="ڈرائی فروٹ، اخروٹ، سلاجیت یا بادام تلاش کریں..." data-i18n-placeholder="search_placeholder" autocomplete="off">
+                <button class="search-close-btn" id="searchCloseBtn" type="button" aria-label="Close Search">✕</button>
+            </div>
+            <div class="container" id="searchResultsContainer"></div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (سیکشن ۲: شاہانہ ہیرو بینر) -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-side">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span data-i18n="hero_badge">گلگت بلتستان کا 100% خالص و اصل تحفہ</span>
+                </div>
+                <h1 class="hero-title" data-i18n="hero_title">
+                    گلگت بلتستان کے پہاڑوں اور بہترین باغات سے تازہ ترین <span class="gold-accent">خالص ڈرائی فروٹ</span>
+                </h1>
+                <p class="hero-desc" data-i18n="hero_desc">
+                    ابرار ڈرائی فروٹ لایا ہے آپ کے لیے خالص ترین شاہی سلاجیت، کشمیری کاغذی اخروٹ، بادام گری، ایرانی پستہ، شاہی کاجو، چلغوزہ، خشک انجیر، سندر خانی کشمش اور ہنزہ خوبانی۔
+                </p>
+                <div class="hero-pills">
+                    <div class="hero-pill-item">
+                        <span class="pill-icon">🏔️</span>
+                        <span data-i18n="pill_gb">گلگت بلتستان کا خالص انتخاب</span>
+                    </div>
+                    <div class="hero-pill-item">
+                        <span class="pill-icon">🌿</span>
+                        <span data-i18n="pill_organic">100% قدرتی و نامیاتی</span>
+                    </div>
+                    <div class="hero-pill-item">
+                        <span class="pill-icon">📦</span>
+                        <span data-i18n="pill_cod">پورے پاکستان میں کیش آن ڈلیوری</span>
+                    </div>
+                    <div class="hero-pill-item">
+                        <span class="pill-icon">🛡️</span>
+                        <span data-i18n="pill_guarantee">7 دن کی منی بیک گارنٹی</span>
+                    </div>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#products" class="btn btn-primary" data-i18n="hero_btn_shop">
+                        <span>خریداری شروع کریں</span>
+                        <svg class="icon btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z"/></svg>
+                    </a>
+                    <a href="#shilajit-special" class="btn btn-gold" data-i18n="hero_btn_shilajit">
+                        <span>اصل سلاجیت دیکھیں 🏔️</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Visual Showcase -->
+            <div class="hero-visual-side">
+                <div class="hero-main-card">
+                    <img src="images/hero-banner.jpg" alt="ابرار ڈرائی فروٹ اور گلگت بلتستان کے پہاڑ" class="hero-image" id="heroMainImg">
+                    <div class="hero-float-card card-top">
+                        <div class="float-icon">⭐</div>
+                        <div class="float-info">
+                            <h4 data-i18n="float_rate">4.9 / 5.0 ریٹنگ</h4>
+                            <p data-i18n="float_count">15,000+ مطمئن گاہک</p>
+                        </div>
+                    </div>
+                    <div class="hero-float-card card-bottom">
+                        <div class="float-icon">🏔️</div>
+                        <div class="float-info">
+                            <h4 data-i18n="float_shilajit_title">خالص سلاجیت بلتستان</h4>
+                            <p data-i18n="float_shilajit_sub">18,000 فٹ بلندی سے حاصل کردہ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Stats Bar -->
+        <div class="trust-stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" dir="ltr">100%</span>
+                    <span class="stat-label" data-i18n="stat_purity">خالص و قدرتی پروڈکٹس</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" dir="ltr">15,000+</span>
+                    <span class="stat-label" data-i18n="stat_customers">پورے پاکستان میں مطمئن خریدار</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-i18n="stat_days">2 - 3 دن</span>
+                    <span class="stat-label" data-i18n="stat_delivery">تیز ترین کوریئر ڈلیوری</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" dir="ltr">50+</span>
+                    <span class="stat-label" data-i18n="stat_varieties">اقسام کے تازہ خشک میوہ جات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SPECIAL SHILAJIT & GILGIT-BALTISTAN MOUNTAINS SECTION (سیکشن ۳: گلگت بلتستان کے برف پوش پہاڑ اور خالص سلاجیت) -->
+    <section class="shilajit-special-section" id="shilajit-special">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="shilajit_tag">خصوصی شاہکار • گلگت بلتستان کی سوغات</div>
+                <h2 class="section-title" data-i18n="shilajit_title">
+                    گلگت بلتستان کے برف پوش پہاڑوں سے حاصل شدہ <span class="gold-accent">اصل شاہی سلاجیت</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="shilajit_subtitle">
+                    قراقرم اور ہمالیہ کے 16,000 سے 18,000 فٹ بلند برفانی چٹانوں سے قدرتی طور پر رسنے والی خالص ترین گولڈ گریڈ سلاجیت، جو جسمانی طاقت، ہڈیوں کی مضبوطی اور قدرتی توانائی کا بے مثل سرچشمہ ہے۔
+                </p>
+            </div>
+
+            <!-- Mountain & Shilajit Split Showcase -->
+            <div class="shilajit-showcase-grid">
+                <!-- Gilgit Baltistan Mountains Card -->
+                <div class="gb-mountain-card">
+                    <div class="mountain-img-wrapper">
+                        <img src="images/gb-mountains.jpg" alt="گلگت بلتستان کے برف پوش قراقرم پہاڑ" class="mountain-img">
+                        <div class="mountain-overlay"></div>
+                        <div class="mountain-badge">
+                            <span class="badge-icon">📍</span>
+                            <span data-i18n="mountain_badge_text">گلگت بلتستان • ۱۸،۰۰۰ فٹ بلند قراقرم چٹانیں</span>
+                        </div>
+                    </div>
+                    <div class="mountain-details">
+                        <div>
+                            <h3 data-i18n="mountain_card_title">برف پوش قراقرم کی چٹانوں سے قدرتی نچوڑ</h3>
+                            <p data-i18n="mountain_card_desc">
+                                ہماری سلاجیت گلگت، سکردو اور ہنزہ کے انتہائی اونچے اور صاف ترین برفانی سلسلوں سے ماہرین کے ذریعے اکٹھی کی جاتی ہے۔ چٹانوں سے نکلنے والے اس نایاب معدنی رس کو قدرتی شمسی طریقے سے فلٹر کر کے شیشے کے برتنوں میں محفوظ کیا جاتا ہے۔
+                            </p>
+                        </div>
+                        <div class="mountain-features">
+                            <div class="m-feat"><span>❄️</span> <strong data-i18n="m_feat_1">100% قدرتی برفانی نچوڑ</strong></div>
+                            <div class="m-feat"><span>☀️</span> <strong data-i18n="m_feat_2">شمسی فلٹریشن (بغیر آگ)</strong></div>
+                            <div class="m-feat"><span>🔬</span> <strong data-i18n="m_feat_3">لیب ٹیسٹ شدہ خالص رال</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pure Resin & Shilajit Product Presentation -->
+                <div class="shilajit-product-card">
+                    <div class="shilajit-img-wrapper">
+                        <img src="images/shilajit-resin.jpg" alt="گلگت بلتستان کی خالص سلاجیت رال شیشے کے جار میں" class="shilajit-img">
+                        <div class="shilajit-seal">
+                            <span data-i18n="shilajit_seal_top">گولڈ گریڈ</span>
+                            <small dir="ltr">100% PURE</small>
+                        </div>
+                    </div>
+
+                    <div class="shilajit-content">
+                        <div>
+                            <div class="price-header">
+                                <div>
+                                    <h3 class="shilajit-item-title" data-i18n="shilajit_prod_title">خالص گولڈ گریڈ سلاجیت (شیشے کی جار میں)</h3>
+                                    <div class="rating-stars">★★★★★ <span class="rating-num" data-i18n="shilajit_reviews_count">(4.9/5 - 1,480+ ریویوز)</span></div>
+                                </div>
+                                <div class="price-box" dir="ltr">
+                                    <span class="currency">PKR</span>
+                                    <span class="price-amount" id="shilajitActivePrice">1,850</span>
+                                </div>
+                            </div>
+
+                            <p class="shilajit-desc" data-i18n="shilajit_prod_desc">
+                                گاڑھی، تارکول نما چمکدار اصلی رال۔ جس میں پائے جاتے ہیں 84 سے زائد نایاب قدرتی منرلز اور فلوک ایسڈ جو جسم کی تھکاوٹ، جوڑوں کے درد اور کمزوری کو قدرتی طور پر دور کرتے ہیں۔
+                            </p>
+
+                            <div class="weight-selector-group">
+                                <label class="weight-label" data-i18n="select_size">پیکنگ سائز منتخب کریں:</label>
+                                <div class="weight-options">
+                                    <button type="button" class="weight-btn active" data-grams="20g" data-price="1850" data-i18n="shilajit_w_20">20 گرام (ٹیسٹر پیک)</button>
+                                    <button type="button" class="weight-btn" data-grams="50g" data-price="3950" data-i18n="shilajit_w_50">50 گرام (فیملی پیک)</button>
+                                    <button type="button" class="weight-btn" data-grams="100g" data-price="7200" data-i18n="shilajit_w_100">100 گرام (شاہی پیک)</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shilajit-actions">
+                            <button type="button" class="btn btn-primary btn-block add-to-cart-shilajit" id="addShilajitBtn" data-i18n="btn_add_shilajit">
+                                🛒 ٹوکری میں شامل کریں
+                            </button>
+                            <a href="https://wa.me/923463298608?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%85%D8%AC%DA%BE%DB%92%20%DA%AF%D9%84%DA%AF%D8%AA%20%D8%A8%D9%84%D8%AA%D8%B3%D8%AA%D8%A7%D9%86%20%DA%A9%DB%8C%20%D8%AE%D8%A7%D9%84%D8%B5%20%DA%AF%D9%88%D9%84%DA%88%20%DA%AF%D8%B1%DB%8C%DA%88%20%D8%B3%D9%84%D8%A7%D8%AC%DB%8C%D8%AA%20%D8%A2%D8%B1%DA%88%D8%B1%20%DA%A9%D8%B1%D9%86%DB%8C%20%DB%81%DB%92%DB%94" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block" data-i18n="btn_wa_shilajit">
+                                💬 واٹس ایپ پر ابھی منگوائیں
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Purity Test Guide for Shilajit (اصلی سلاجیت کی پہچان) -->
+            <div class="purity-test-box">
+                <div class="purity-header">
+                    <span class="purity-icon">🔍</span>
+                    <div>
+                        <h4 data-i18n="purity_title">گھر پر اصلی سلاجیت چیک کرنے کے ۳ آسان طریقے</h4>
+                        <p data-i18n="purity_sub">ہم ہر خریدار کو دعوت دیتے ہیں کہ وہ گھر پر یہ آسان ٹیسٹ کر کے مکمل تسلی کرے:</p>
+                    </div>
+                </div>
+                <div class="purity-tests-grid">
+                    <div class="test-card">
+                        <span class="test-num">۱</span>
+                        <h5 data-i18n="test1_title">نیم گرم پانی یا دودھ میں حل پذیری</h5>
+                        <p data-i18n="test1_desc">اصلی سلاجیت گرم پانی یا دودھ میں ڈالتے ہی چند سیکنڈ میں سنہری سرخ رنگت کے ساتھ مکمل گھل جاتی ہے اور تہہ میں کوئی ذرہ یا ریت باقی نہیں رہتی۔</p>
+                    </div>
+                    <div class="test-card">
+                        <span class="test-num">۲</span>
+                        <h5 data-i18n="test2_title">آگ اور حرارت کا ٹیسٹ</h5>
+                        <p data-i18n="test2_desc">اصلی سلاجیت کو جب آگ دکھائی جائے تو یہ شعلہ نہیں پکڑتی اور نہ ہی بدبودار دھواں پیدا کرتی ہے بلکہ جھاگ بن کر پھولتی ہے اور راکھ بن جاتی ہے۔</p>
+                    </div>
+                    <div class="test-card">
+                        <span class="test-num">۳</span>
+                        <h5 data-i18n="test3_title">درجہ حرارت پر لچک</h5>
+                        <p data-i18n="test3_desc">فریج میں رکھنے پر شیشے کی طرح سخت ہو جاتی ہے، جبکہ ہتھیلی یا عام گرمائش پر موم کی طرح نرم اور چمکدار کھنچنے والی رال بن جاتی ہے۔</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CATEGORIES SECTION (سیکشن ۴: اقسام اور زمرہ جات) -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="cat_tag">ہمارے ورائٹی زمرہ جات</div>
+                <h2 class="section-title" data-i18n="cat_title">مختلف اقسام کے <span class="gold-accent">اعلیٰ خشک میوہ جات</span></h2>
+                <p class="section-subtitle" data-i18n="cat_subtitle">اپنی پسند کا زمرہ منتخب کریں اور تازہ ترین باغات سے منتخب کردہ خالص میوہ جات حاصل کریں</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- Cat 1: Walnuts -->
+                <div class="category-card" data-category="walnut">
+                    <div class="cat-img-box">
+                        <img src="images/walnuts-shell.jpg" alt="کشمیری کاغذی اخروٹ" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_walnut_badge">کشمیری و گلگتی</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_walnut_name">کاغذی اخروٹ اور گری</h3>
+                        <p class="cat-desc" data-i18n="cat_walnut_desc">ہاتھ سے ٹوٹنے والا کاغذی اخروٹ اور قدرتی تیل سے بھرپور سفید اخروٹ گری۔</p>
+                        <a href="#products" class="cat-link" onclick="filterCategory('walnut')" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+
+                <!-- Cat 2: Almonds -->
+                <div class="category-card" data-category="almond">
+                    <div class="cat-img-box">
+                        <img src="images/almonds.jpg" alt="خالص بادام گری" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_almond_badge">مامرا و امریکن</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_almond_name">خالص بادام گری</h3>
+                        <p class="cat-desc" data-i18n="cat_almond_desc">کرکری، شیریں اور میٹھی بادام گری جو حافظہ اور جسمانی طاقت بڑھائے۔</p>
+                        <a href="#products" class="cat-link" onclick="filterCategory('almond')" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+
+                <!-- Cat 3: Pistachios & Cashews -->
+                <div class="category-card" data-category="pista-kaju">
+                    <div class="cat-img-box">
+                        <img src="images/pistachios.jpg" alt="ایرانی پستہ اور شاہی کاجو" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_pista_badge">روسٹڈ و نمکین</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_pista_name">پستہ اور شاہی کاجو</h3>
+                        <p class="cat-desc" data-i18n="cat_pista_desc">جمبو سائز ایرانی پستہ اور کرکرے نمکین شاہی کاجو۔</p>
+                        <a href="#products" class="cat-link" onclick="filterCategory('pista-kaju')" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+
+                <!-- Cat 4: Shilajit -->
+                <div class="category-card" data-category="shilajit">
+                    <div class="cat-img-box">
+                        <img src="images/shilajit-resin.jpg" alt="گلگت بلتستان سلاجیت" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_shilajit_badge">100% اصلی گلگت</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_shilajit_name">خالص گولڈ گریڈ سلاجیت</h3>
+                        <p class="cat-desc" data-i18n="cat_shilajit_desc">برفانی پہاڑوں کی اصل سلاجیت جو طاقت، توانائی اور جوڑوں کے لیے اکسیر ہے۔</p>
+                        <a href="#shilajit-special" class="cat-link" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+
+                <!-- Cat 5: Chilgoza & Figs -->
+                <div class="category-card" data-category="chilgoza-figs">
+                    <div class="cat-img-box">
+                        <img src="images/dried-figs.jpg" alt="خشک پہاڑی انجیر اور چلغوزہ" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_chilgoza_badge">وزیرستان و پہاڑی</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_chilgoza_name">شاہی چلغوزہ اور خشک انجیر</h3>
+                        <p class="cat-desc" data-i18n="cat_chilgoza_desc">تازہ بھنا ہوا چلغوزہ اور نرم، میٹھی، صحت بخش پہاڑی انجیر۔</p>
+                        <a href="#products" class="cat-link" onclick="filterCategory('chilgoza-figs')" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+
+                <!-- Cat 6: Raisins & Apricots -->
+                <div class="category-card" data-category="raisins-apricots">
+                    <div class="cat-img-box">
+                        <img src="images/dried-apricots.jpg" alt="ہنزہ خوبانی اور کشمش" class="cat-img">
+                        <span class="cat-badge" data-i18n="cat_apricot_badge">ہنزہ و سندر خانی</span>
+                    </div>
+                    <div class="cat-body">
+                        <h3 class="cat-name" data-i18n="cat_apricot_name">کشمش اور ہنزہ کی خوبانی</h3>
+                        <p class="cat-desc" data-i18n="cat_apricot_desc">سندر خانی لمبی کشمش اور ہنزہ کی قدرتی سنہری خشک خوبانی۔</p>
+                        <a href="#products" class="cat-link" onclick="filterCategory('raisins-apricots')" data-i18n="explore_cat">دیکھیں ←</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTS STORE CATALOG (سیکشن ۵: مصنوعات کی مکمل دکان) -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="shop_tag">ابرار ڈرائی فروٹ سپر اسٹور</div>
+                <h2 class="section-title" data-i18n="shop_title">ہماری تمام <span class="gold-accent">خالص پروڈکٹس اور نرخ</span></h2>
+                <p class="section-subtitle" data-i18n="shop_subtitle">تازہ ویکیوم پیکنگ، کیش آن ڈلیوری اور بہترین قیمت پر دستیاب</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="filter-tabs-wrapper">
+                <button type="button" class="filter-tab active" data-filter="all" data-i18n="filter_all">تمام مصنوعات</button>
+                <button type="button" class="filter-tab" data-filter="walnut" data-i18n="filter_walnut">اخروٹ</button>
+                <button type="button" class="filter-tab" data-filter="almond" data-i18n="filter_almond">بادام</button>
+                <button type="button" class="filter-tab" data-filter="pista-kaju" data-i18n="filter_pista_kaju">پستہ و کاجو</button>
+                <button type="button" class="filter-tab" data-filter="shilajit" data-i18n="filter_shilajit">سلاجیت</button>
+                <button type="button" class="filter-tab" data-filter="chilgoza-figs" data-i18n="filter_chilgoza">چلغوزہ و انجیر</button>
+                <button type="button" class="filter-tab" data-filter="raisins-apricots" data-i18n="filter_raisins">کشمش و خوبانی</button>
+                <button type="button" class="filter-tab" data-filter="gift-boxes" data-i18n="filter_gifts">گفٹ باکسز</button>
+            </div>
+
+            <!-- Dynamic Product Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Rendered dynamically by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. HEALTH BENEFITS & NUTRITION ENCYCLOPEDIA (سیکشن ۶: طبی فوائد و غذائیت کا انسائیکلوپیڈیا) -->
+    <section class="health-benefits-section" id="health-benefits">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="health_tag">صحت کا قدرتی خزانہ</div>
+                <h2 class="section-title" data-i18n="health_title">ڈرائی فروٹ اور سلاجیت کے <span class="gold-accent">طبی فوائد</span></h2>
+                <p class="section-subtitle" data-i18n="health_subtitle">قدرت کے ان انمول تحائف کے روزمرہ استعمال سے حاصل ہونے والے حیرت انگیز فوائد</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">🧠</div>
+                    <h3 class="benefit-title" data-i18n="benefit1_title">اخروٹ - دماغ اور دل کا نگہبان</h3>
+                    <p class="benefit-desc" data-i18n="benefit1_desc">
+                        اومیگا 3 فیٹی ایسڈز اور اینٹی آکسیڈنٹس کا بھرپور ذریعہ ہے۔ یادداشت کو تیز کرتا ہے، ذہنی تناؤ کم کرتا ہے اور کولیسٹرول کو نارمل رکھ کر دل کے امراض سے بچاتا ہے۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b1_li1">حافظہ اور دماغی صلاحیت میں اضافہ</li>
+                        <li data-i18n="b1_li2">امراضِ قلب اور بلڈ پریشر سے بچاؤ</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">⚡</div>
+                    <h3 class="benefit-title" data-i18n="benefit2_title">سلاجیت - جوڑوں کا درد اور توانائی</h3>
+                    <p class="benefit-desc" data-i18n="benefit2_desc">
+                        84 نایاب معدنیات اور فلوک ایسڈ کی بدولت پٹھوں کی کمزوری، کمر اور جوڑوں کے درد کو جڑ سے ختم کرتی ہے اور جسمانی و اعصابی طاقت کو دوبالا کرتی ہے۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b2_li1">قوتِ مدافعت اور اسٹیمینا میں اضافہ</li>
+                        <li data-i18n="b2_li2">ہڈیوں اور جوڑوں کے درد کا مؤثر علاج</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">✨</div>
+                    <h3 class="benefit-title" data-i18n="benefit3_title">بادام - جلد، بالوں اور ہڈیوں کی جان</h3>
+                    <p class="benefit-desc" data-i18n="benefit3_desc">
+                        وٹامن ای، میگنیشیم اور پروٹین سے مالا مال۔ چہرے کی قدرتی چمک بحال کرتا ہے، بالوں کو گرنے سے روکتا ہے اور ہڈیوں کو مضبوط بناتا ہے۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b3_li1">جلد کی خوبصورتی اور قدرتی نکھار</li>
+                        <li data-i18n="b3_li2">کیلشیم اور قدرتی پروٹین کا سرچشمہ</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">👁️</div>
+                    <h3 class="benefit-title" data-i18n="benefit4_title">پستہ اور کاجو - بینائی اور خون کی روانی</h3>
+                    <p class="benefit-desc" data-i18n="benefit4_desc">
+                        لیوٹین، زیکسنتھین اور زنک کی بھرپور مقدار بینائی کو تیز کرتی ہے، جبکہ کاجو میں موجود آئرن اور تانبا خون کی کمی (انیمیا) کو دور کرتا ہے۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b4_li1">آنکھوں کی حفاظت اور بینائی کی تیزی</li>
+                        <li data-i18n="b4_li2">خون کے سرخ خلیات میں اضافہ</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">🌿</div>
+                    <h3 class="benefit-title" data-i18n="benefit5_title">خشک انجیر - نظامِ ہضم اور معدے کی شفا</h3>
+                    <p class="benefit-desc" data-i18n="benefit5_desc">
+                        فائبر سے بھرپور پھل جو دائمی قبض، معدے کی تیزابیت اور کمزوری سے قدرتی نجات دلاتا ہے اور جگر کو زہریلے مادوں سے پاک کرتا ہے۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b5_li1">دائمی قبض اور تیزابیت کا قدرتی علاج</li>
+                        <li data-i18n="b5_li2">معدہ اور جگر کی صفائی</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">🔥</div>
+                    <h3 class="benefit-title" data-i18n="benefit6_title">چلغوزہ - فوری حرارت اور بھرپور توانائی</h3>
+                    <p class="benefit-desc" data-i18n="benefit6_desc">
+                        سردیوں میں جسم کو قدرتی حرارت پہنچانے والا شاہانہ میوہ۔ وٹامن کے اور قدرتی روغن دل اور پٹھوں کو غیر معمولی طاقت دیتے ہیں۔
+                    </p>
+                    <ul class="benefit-list">
+                        <li data-i18n="b6_li1">شدید سردی میں جسمانی حرارت و توانائی</li>
+                        <li data-i18n="b6_li2">پٹھوں اور اعصاب کی مضبوطی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. QUALITY ASSURANCE & SOURCING PROCESS (سیکشن ۷: ہمارا معیار اور کوالٹی چیک) -->
+    <section class="quality-section" id="quality-process">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="process_tag">معیار کی ضمانت</div>
+                <h2 class="section-title" data-i18n="process_title">باغات سے آپ کی دہلیز تک <span class="gold-accent">معیار کے ۴ سخت مراحل</span></h2>
+                <p class="section-subtitle" data-i18n="process_subtitle">ہم ہر دانے اور ہر قطرے کی پاکیزگی اور صفائی پر کوئی سمجھوتہ نہیں کرتے</p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="process-step">
+                    <div class="step-badge" data-i18n="step1_badge">مرحلہ ۱</div>
+                    <div class="step-icon">🏔️</div>
+                    <h3 class="step-title" data-i18n="step1_title">باغات اور چٹانوں سے چناؤ</h3>
+                    <p class="step-desc" data-i18n="step1_desc">گلگت، سکردو، ہنزہ اور وزیرستان کے مقامی کسانوں اور تجربہ کار پہاڑیوں سے براہِ راست تازہ ترین چناؤ۔</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-badge" data-i18n="step2_badge">مرحلہ ۲</div>
+                    <div class="step-icon">🧤</div>
+                    <h3 class="step-title" data-i18n="step2_title">ہاتھ سے کوالٹی چھانٹی</h3>
+                    <p class="step-desc" data-i18n="step2_desc">ہر میوے کو ماہرین کے ذریعے پرکھا جاتا ہے، خراب یا خالی دانے الگ کر کے صرف اے-پلس (Grade A+) دانہ منتخب کیا جاتا ہے۔</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-badge" data-i18n="step3_badge">مرحلہ ۳</div>
+                    <div class="step-icon">🔬</div>
+                    <h3 class="step-title" data-i18n="step3_title">لیب ٹیسٹنگ اور صفائی</h3>
+                    <p class="step-desc" data-i18n="step3_desc">سلاجیت اور میوہ جات کو سائنسی معیار کے مطابق مٹی اور گرد سے مکمل پاک کر کے فوڈ سیفٹی ٹیسٹ پاس کیا جاتا ہے۔</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-badge" data-i18n="step4_badge">مرحلہ ۴</div>
+                    <div class="step-icon">📦</div>
+                    <h3 class="step-title" data-i18n="step4_title">ویکیوم نائٹروجن پیکنگ</h3>
+                    <p class="step-desc" data-i18n="step4_desc">ہوا بند نائٹروجن اور زپ لاک ایئر ٹائٹ بیگز میں پیکنگ، تاکہ ذائقہ، خوشبو اور کرکرا پن مہینوں تک برقرار رہے۔</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. GIFT BOXES & WEDDING PLATTERS (سیکشن ۸: شاہی گفٹ باکس اور شادی بیاہ کے ڈالے) -->
+    <section class="gift-section" id="gift-boxes">
+        <div class="container">
+            <div class="gift-showcase-box">
+                <div class="gift-text-side">
+                    <span class="gift-tag" data-i18n="gift_tag">شاہی سوغات و تحائف</span>
+                    <h2 class="gift-title" data-i18n="gift_title">شادی بیاہ، عید اور خاص تقاریب کے لیے <span class="gold-accent">لگژری ڈرائی فروٹ گفٹ باکسز</span></h2>
+                    <p class="gift-desc" data-i18n="gift_desc">
+                        اپنے عزیزوں، دوستوں اور کارپوریٹ کلائنٹس کو دیں خالص محبت کا تحفہ۔ ہاتھ سے بنے دیدہ زیب لکڑی کے باکسز اور پلیٹرز، جن میں سجے ہیں چنے ہوئے اخروٹ، بادام، پستہ، کاجو، چلغوزہ، انجیر اور کشمش۔
+                    </p>
+                    <ul class="gift-perks">
+                        <li data-i18n="gift_p1">🎁 حسبِ ضرورت تحفے کے پیغامات اور کارڈز</li>
+                        <li data-i18n="gift_p2">🎀 شاہی گولڈن ربن اور خصوصی سجاوٹ</li>
+                        <li data-i18n="gift_p3">🏢 کارپوریٹ اور شادی تقاریب کے خصوصی آرڈر</li>
+                        <li data-i18n="gift_p4">✈️ بیرون ملک مقیم پاکستانیوں کے پیاروں کے لیے ترسیل</li>
+                    </ul>
+                    <div class="gift-cta-wrap">
+                        <a href="https://wa.me/923463298608?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%85%D8%AC%DA%BE%DB%92%20%D8%B4%D8%A7%D8%AF%DB%8C%20%2F%20%D8%AA%D9%82%D8%B1%DB%8C%D8%A8%20%DA%A9%DB%92%20%D9%84%DB%8C%DB%92%20%DA%A9%D8%B3%D9%B9%D9%85%20%DA%88%D8%B1%D8%A7%D8%A6%DB%8C%20%D9%81%D8%B1%D9%88%D9%B9%20%DA%AF%D9%81%D9%B9%20%D8%A8%D8%A7%DA%A9%D8%B3%20%D8%AA%DB%8C%D8%A7%D8%B1%20%DA%A9%D8%B1%D9%88%D8%A7%D9%86%D8%A7%20%DB%81%DB%92%DB%94" target="_blank" rel="noopener noreferrer" class="btn btn-gold" data-i18n="gift_btn">
+                            🎁 اپنا کسٹم گفٹ باکس بنوائیں
+                        </a>
+                    </div>
+                </div>
+                <div class="gift-img-side">
+                    <img src="images/royal-platter.jpg" alt="لگژری ڈرائی فروٹ پلیٹر اور گفٹ باکس" class="gift-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TESTIMONIALS & CUSTOMER REVIEWS (سیکشن ۹: گاہکوں کے تاثرات اور ریویوز) -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="reviews_tag">اعتماد اور محبت</div>
+                <h2 class="section-title" data-i18n="reviews_title">ہمارے مطمئن گاہکوں کے <span class="gold-accent">سچے تاثرات</span></h2>
+                <p class="section-subtitle" data-i18n="reviews_subtitle">پورے پاکستان سے ہزاروں خاندان باقاعدگی سے ابرار ڈرائی فروٹ پر اعتماد کرتے ہیں</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review1_text">
+                            "میں نے ابرار ڈرائی فروٹ سے 50 گرام سلاجیت منگوائی تھی۔ واقعی گرم پانی میں ڈالتے ہی بغیر ہلے گھل گئی اور ایک ہفتے کے استعمال سے میرے گھٹنوں کے پرانے درد میں نمایاں آرام آیا ہے۔ کمال کی اصلی چیز ہے!"
+                        </p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">AM</div>
+                        <div>
+                            <h4 class="reviewer-name" data-i18n="rev1_name">حاجی ارشد محمود</h4>
+                            <span class="reviewer-city" data-i18n="rev1_city">لاہور • تصدیق شدہ خریدار</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review2_text">
+                            "کاغذی اخروٹ اتنے نرم تھے کہ ہاتھ کی دو انگلیوں سے ٹوٹ گئے۔ اندر سے گری بالکل سفید اور تیل سے بھرپور نکلی۔ پستہ بھی نمکین اور کرکرا تھا۔ گھر والوں کو بہت پسند آیا۔"
+                        </p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">FK</div>
+                        <div>
+                            <h4 class="reviewer-name" data-i18n="rev2_name">فاطمہ خان</h4>
+                            <span class="reviewer-city" data-i18n="rev2_city">اسلام آباد • تصدیق شدہ خریدار</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text" data-i18n="review3_text">
+                            "کراچی میں کوریئر دو دن کے اندر پہنچ گیا اور کیش آن ڈلیوری پر پارسل وصول کیا۔ ویکیوم پیکنگ بہت زبردست تھی، کوئی دانہ خراب نہیں نکلا۔ اب ہمارا مستقل اسٹور یہی ہے۔"
+                        </p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">TQ</div>
+                        <div>
+                            <h4 class="reviewer-name" data-i18n="rev3_name">طارق بن قاسم</h4>
+                            <span class="reviewer-city" data-i18n="rev3_city">کراچی • تصدیق شدہ خریدار</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FAQS ACCORDION (سیکشن ۱۰: عام پوچھے جانے والے سوالات) -->
+    <section class="faqs-section" id="faqs">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="faq_tag">رہنمائی اور سوالات</div>
+                <h2 class="section-title" data-i18n="faq_title">اکثر پوچھے جانے والے <span class="gold-accent">اہم سوالات</span></h2>
+                <p class="section-subtitle" data-i18n="faq_subtitle">آرڈر کرنے اور کوالٹی کے حوالے سے آپ کے تمام سوالات کے شفاف جوابات</p>
+            </div>
+
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span data-i18n="faq1_q">کیا آپ کی سلاجیت واقعی 100% اصلی گلگت بلتستان کی ہے؟</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq1_a">جی بالکل! ہماری سلاجیت گلگت اور سکردو کے 16,000 سے 18,000 فٹ بلند برفانی پہاڑوں سے خصوصی ٹیمیں حاصل کرتی ہیں۔ یہ بغیر کسی کیمیکل یا ملاوٹ کے روایتی شمسی فلٹریشن سے صاف کی جاتی ہے۔ آپ گھر پر گرم پانی اور آگ کا ٹیسٹ کر کے مکمل تسلی کر سکتے ہیں، غیر معیاری ثابت ہونے پر 100% رقم واپس دی جائے گی۔</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span data-i18n="faq2_q">ڈلیوری کے چارجز کیا ہیں اور پارسل کتنے دن میں پہنچتا ہے؟</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq2_a">3,000 روپے سے زائد کے ہر آرڈر پر پورے پاکستان میں ڈلیوری بالکل مفت ہے! اس سے کم آرڈر پر صرف 200 روپے چارجز ہیں۔ آرڈر کنفرم ہونے کے بعد ٹی سی ایس (TCS) اور لیپرڈ کوریئر کے ذریعے 2 سے 3 کاروباری دنوں میں پارسل آپ کے گھر پہنچا دیا جاتا ہے۔</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span data-i18n="faq3_q">کیا کیش آن ڈلیوری (COD) کی سہولت موجود ہے؟</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq3_a">جی ہاں! پورے پاکستان کے تمام چھوٹے بڑے شہروں اور قصبوں میں کیش آن ڈلیوری کی سہولت دستیاب ہے۔ جب کوریئر والا پارسل لے کر آئے تب آپ رقم ادا کر سکتے ہیں۔ اس کے علاوہ جاز کیش، ایزی پیسہ اور بینک ٹرانسفر کی سہولت بھی موجود ہے۔</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span data-i18n="faq4_q">اگر میوہ خراب نکلے تو کیا واپسی یا تبدیلی ہو سکتی ہے؟</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq4_a">ہماری طرف سے 7 دن کی منی بیک گارنٹی فراہم کی جاتی ہے۔ اگر پارسل موصول ہونے پر کوئی پروڈکٹ غیر معیاری، باسی یا خراب ہو تو آپ فوری طور پر ہمارے واٹس ایپ نمبر (03463298608) پر تصویر بھیج کر مفت تبدیلی یا مکمل رقم واپسی کا کلیم کر سکتے ہیں۔</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span data-i18n="faq5_q">ڈرائی فروٹ کو لمبے عرصے تک تازہ رکھنے کا کیا طریقہ ہے؟</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq5_a">ڈرائی فروٹ کو ہمیشہ ایئر ٹائٹ شیشے یا پلاسٹک کے جار میں بند رکھیں۔ گرمیوں کے موسم میں اخروٹ گری، بادام اور پستے کو فریج میں رکھنا بہتر ہوتا ہے تاکہ ان کا قدرتی تیل تازہ رہے اور ذائقہ خراب نہ ہو۔</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. DISCOUNT OFFER & VIP HARVEST CLUB (سیکشن ۱۱: رعایتی آفر اور کوپن کوڈ) -->
+    <section class="vip-discount-section" id="vip-offer">
+        <div class="container">
+            <div class="vip-discount-card">
+                <div class="vip-text">
+                    <span class="discount-badge" data-i18n="offer_badge">محدود وقت کے لیے آفر</span>
+                    <h2 class="discount-title" data-i18n="offer_title">پہلے آرڈر پر <span class="gold-accent">10% کی فوری رعایت</span> حاصل کریں</h2>
+                    <p class="discount-desc" data-i18n="offer_desc">اپنی شاپنگ ٹوکری میں پرومو کوڈ لگائیں اور گلگت بلتستان کے تازہ ترین خشک میوہ جات رعایتی نرخوں پر اپنے گھر منگوائیں۔</p>
+                </div>
+                <div class="coupon-box">
+                    <span class="coupon-label" data-i18n="coupon_label">آپ کا پرومو کوڈ:</span>
+                    <button type="button" class="coupon-code-pill" id="couponCodePill" title="کاپی کرنے کے لیے کلک کریں">
+                        <code dir="ltr">ABRAR10</code>
+                        <span class="copy-hint" data-i18n="copy_click">کاپی کریں 📋</span>
+                    </button>
+                    <span class="copied-msg" id="copiedMsg" data-i18n="copied_msg">کوڈ کاپی ہو گیا!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. PHYSICAL STORE LOCATION & CONTACT (سیکشن ۱۲: دکان کا پتہ اور رابطہ گاہ) -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag" data-i18n="contact_tag">رابطہ اور تشریف آوری</div>
+                <h2 class="section-title" data-i18n="contact_title">ہماری دکان اور <span class="gold-accent">رابطہ کی تفصیلات</span></h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">کسی بھی سوال، ہول سیل ریٹس یا براہِ راست خریداری کے لیے ہم ہر وقت حاضر ہیں</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3 class="info-card-title" data-i18n="store_heading">ابرار ڈرائی فروٹ اینڈ سلاجیت سینٹر</h3>
+                    <p class="info-card-desc" data-i18n="store_desc">خالص سوغات کا قابلِ اعتماد اور مستند مرکز۔ آپ ہماری فزیکل دکان پر بھی تشریف لا سکتے ہیں جہاں آپ تمام ڈرائی فروٹ اور سلاجیت کا براہِ راست مشاہدہ کر سکتے ہیں۔</p>
+
+                    <div class="info-items-list">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <strong data-i18n="address_label">دکان کا پتہ:</strong>
+                                <p data-i18n="address_val">ابرار سنٹر، مین جی ٹی روڈ، نزد گلگت بلتستان ڈرائی فروٹ مارکیٹ، راولپنڈی / اسلام آباد</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <strong data-i18n="phone_label">فون و ہیلپ لائن:</strong>
+                                <p><a href="tel:+923463298608" dir="ltr" class="ltr-num">0346-3298608</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">💬</div>
+                            <div>
+                                <strong data-i18n="wa_label">واٹس ایپ آرڈر لائن:</strong>
+                                <p><a href="https://wa.me/923463298608" target="_blank" rel="noopener noreferrer" dir="ltr" class="ltr-num">0346-3298608</a> (<span data-i18n="wa_active_247">24 گھنٹے فعال</span>)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div>
+                                <strong data-i18n="timings_label">دکان کے اوقات:</strong>
+                                <p data-i18n="timings_val">ہفتے کے ساتوں دن: صبح 9:00 بجے سے رات 11:00 بجے تک</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3 class="form-title" data-i18n="form_title">ہمیں آن لائن پیغام بھیجیں</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" data-i18n="form_name">آپ کا نام:</label>
+                            <input type="text" id="contactName" required placeholder="مثلاً: محمد احمد" data-i18n-placeholder="ph_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone" data-i18n="form_phone">فون یا واٹس ایپ نمبر:</label>
+                            <input type="tel" id="contactPhone" dir="ltr" required placeholder="0346-3298608">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactCity" data-i18n="form_city">شہر:</label>
+                            <input type="text" id="contactCity" placeholder="مثلاً: لاہور، کراچی، اسلام آباد" data-i18n-placeholder="ph_city">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMsg" data-i18n="form_msg">آپ کا پیغام یا درکار پروڈکٹ:</label>
+                            <textarea id="contactMsg" rows="4" placeholder="ہمیں بتائیں آپ کو کیا درکار ہے..." data-i18n-placeholder="ph_msg" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_send_msg">واٹس ایپ پر پیغام بھیجیں</button>
+                    </form>
+                    <div class="form-success-alert" id="formSuccessAlert" style="display: none;" data-i18n="form_success_text">
+                        ✓ شکریہ! آپ کا پیغام تیار ہے، اب واٹس ایپ ونڈو کھل رہی ہے۔
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FOOTER (سیکشن ۱۳: جامع فوٹر) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="logo-text-group">
+                    <h2 class="logo-title" data-i18n="brand_name">ابرار ڈرائی فروٹ</h2>
+                    <span class="logo-tagline" data-i18n="brand_subtitle">اور قدرتی سلاجیت سینٹر</span>
+                </div>
+                <p class="footer-about" data-i18n="footer_about">
+                    گلگت بلتستان کے برف پوش پہاڑوں اور دنیا کے بہترین باغات سے 100% اصلی، نامیاتی اور خالص ڈرائی فروٹ کا مستند برانڈ۔ پورے پاکستان میں تیز ترین محفوظ ترسیل۔
+                </p>
+                <div class="payment-badges">
+                    <span class="pay-pill" data-i18n="pay_cod">کیش آن ڈلیوری</span>
+                    <span class="pay-pill" dir="ltr">JazzCash</span>
+                    <span class="pay-pill" dir="ltr">EasyPaisa</span>
+                    <span class="pay-pill" data-i18n="pay_bank">بینک ٹرانسفر</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="f_links_title">فوری لنکس</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero" data-i18n="nav_home">ہوم</a></li>
+                    <li><a href="#shilajit-special" data-i18n="nav_shilajit">سلاجیتِ گلگت</a></li>
+                    <li><a href="#categories" data-i18n="nav_categories">اقسام</a></li>
+                    <li><a href="#products" data-i18n="nav_products">تمام مصنوعات</a></li>
+                    <li><a href="#health-benefits" data-i18n="nav_benefits">طبی فوائد</a></li>
+                    <li><a href="#faqs" data-i18n="nav_faq">عام سوالات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="f_cats_title">نمایاں میوہ جات</h4>
+                <ul class="footer-links">
+                    <li><a href="#products" onclick="filterCategory('shilajit')" data-i18n="fc_shilajit">خالص گولڈ سلاجیت</a></li>
+                    <li><a href="#products" onclick="filterCategory('walnut')" data-i18n="fc_walnut">کاغذی اخروٹ اور گری</a></li>
+                    <li><a href="#products" onclick="filterCategory('almond')" data-i18n="fc_almond">مامرا و امریکن بادام</a></li>
+                    <li><a href="#products" onclick="filterCategory('pista-kaju')" data-i18n="fc_pista">شاہی پستہ و کاجو</a></li>
+                    <li><a href="#products" onclick="filterCategory('chilgoza-figs')" data-i18n="fc_chilgoza">چلغوزہ و پہاڑی انجیر</a></li>
+                    <li><a href="#gift-boxes" data-i18n="fc_gift">شادی و عید گفٹ باکس</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading" data-i18n="f_support_title">کسٹمر کیئر و گارنٹی</h4>
+                <ul class="footer-links">
+                    <li><a href="#faqs" data-i18n="fs_guarantee">۷ دن کی منی بیک گارنٹی</a></li>
+                    <li><a href="#faqs" data-i18n="fs_delivery">مفت ہوم ڈلیوری پالیسی</a></li>
+                    <li><a href="#shilajit-special" data-i18n="fs_lab">اصلی سلاجیت ٹیسٹ گائیڈ</a></li>
+                    <li><a href="https://wa.me/923463298608" target="_blank" rel="noopener noreferrer" data-i18n="fs_wa">واٹس ایپ سپورٹ: 03463298608</a></li>
+                    <li><a href="#contact" data-i18n="fs_wholesale">ہول سیل و رابطہ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p data-i18n="copyright_text">© 2026 ابرار ڈرائی فروٹ اور سلاجیت سینٹر۔ جملہ حقوق محفوظ ہیں۔</p>
+                <div class="purity-seal" dir="ltr">
+                    <span>🏔️ 100% Pure Himalayan Origin</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SLIDE-OUT CART DRAWER -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+        <div class="cart-drawer-header">
+            <div class="cart-header-title">
+                <span class="cart-icon">🛒</span>
+                <h3 data-i18n="cart_title">آپ کی شاپنگ ٹوکری</h3>
+                <span class="cart-count-pill" id="cartItemsCount">0</span>
+            </div>
+            <button type="button" class="cart-close-btn" id="cartCloseBtn" aria-label="Close Cart">✕</button>
+        </div>
+
+        <div class="cart-drawer-body" id="cartItemsList">
+            <!-- Rendered by JS -->
+        </div>
+
+        <div class="cart-drawer-footer" id="cartFooter" style="display: none;">
+            <!-- Working Promo Code Bar -->
+            <div class="cart-coupon-row">
+                <input type="text" id="cartCouponInput" dir="ltr" placeholder="ABRAR10" data-i18n-placeholder="ph_coupon">
+                <button type="button" id="applyCouponBtn" class="btn-apply-coupon" data-i18n="btn_apply_coupon">کوڈ لگائیں</button>
+            </div>
+            <div id="couponStatusMsg" class="coupon-status-msg"></div>
+
+            <div class="cart-summary-row">
+                <span data-i18n="cart_subtotal">سب ٹوٹل:</span>
+                <span class="cart-summary-val" id="cartSubtotal" dir="ltr">PKR 0</span>
+            </div>
+            <div class="cart-summary-row" id="cartDiscountRow" style="display: none;">
+                <span data-i18n="cart_discount">رعایت (10%):</span>
+                <span class="cart-summary-val text-success" id="cartDiscountVal" dir="ltr">- PKR 0</span>
+            </div>
+            <div class="cart-summary-row">
+                <span data-i18n="cart_delivery">ڈلیوری چارجز:</span>
+                <span class="cart-summary-val text-success" id="cartDelivery">مفت (Free)</span>
+            </div>
+            <div class="cart-summary-row total-row">
+                <span data-i18n="cart_total">کل رقم:</span>
+                <span class="cart-total-val" id="cartTotal" dir="ltr">PKR 0</span>
+            </div>
+            <div class="delivery-notice">
+                <span class="notice-icon">🚚</span>
+                <small data-i18n="delivery_notice_text">۳۰۰۰ سے زائد پر مفت ڈلیوری | پورے پاکستان میں کیش آن ڈلیوری</small>
+            </div>
+
+            <button type="button" class="btn btn-whatsapp btn-block checkout-btn" id="checkoutBtn" data-i18n="btn_checkout">
+                <span>واٹس ایپ پر آرڈر بھیجیں 🚀</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- PRODUCT QUICK VIEW MODAL -->
+    <div class="modal-overlay" id="productModalOverlay">
+        <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+            <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+            <div class="modal-content-grid" id="modalContent">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923463298608?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%85%D8%AC%DA%BE%DB%92%20%D8%A7%D8%A8%D8%B1%D8%A7%D8%B1%20%DA%88%D8%B1%D8%A7%D8%A6%DB%8C%20%D9%81%D8%B1%D9%88%D9%B9%20%D8%B3%DB%92%20%D8%AA%D8%A7%D8%B2%DB%81%20%D9%85%DB%8C%D9%88%DB%81%20%D8%AC%D8%A7%D8%AA%20%D8%A7%D9%88%D8%B1%20%D8%B3%D9%84%D8%A7%D8%AC%DB%8C%D8%AA%20%D8%A2%D8%B1%DA%88%D8%B1%20%DA%A9%D8%B1%D9%86%DB%8C%20%DB%81%DB%92%DB%94" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="واٹس ایپ: 03463298608" aria-label="WhatsApp 03463298608">
+        <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.16 8.16 0 0 1 2.4 5.83c0 4.54-3.7 8.24-8.24 8.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.85-.87 2.07c0 1.22.89 2.4 1.01 2.56c.13.17 1.76 2.68 4.26 3.76c.59.26 1.05.41 1.41.53c.6.19 1.14.16 1.57.1c.48-.07 1.47-.6 1.68-1.18c.21-.58.21-1.07.15-1.18c-.06-.1-.22-.16-.47-.28c-.25-.13-1.47-.72-1.7-.81c-.23-.09-.39-.13-.56.13c-.17.25-.64.81-.79.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43c.13-.15.17-.25.25-.42c.09-.17.04-.31-.02-.44c-.06-.12-.56-1.34-.76-1.84c-.2-.49-.41-.42-.56-.43h-.48z"/></svg>
+        <span class="floating-tooltip" data-i18n="float_wa_tooltip">واٹس ایپ آرڈر: 03463298608</span>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button type="button" class="back-to-top" id="backToTopBtn" title="اوپر جائیں / Back to Top" aria-label="Back to top">▲</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
